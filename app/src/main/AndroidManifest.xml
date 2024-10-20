@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <meta-data
+        android:name="com.google.android.gms.auth.api.signin.GoogleSignInOptions"
+        android:value="default_web_client_id" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplicationDC"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.NavigationButtons.AllProfilesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NavigationButtons.FavouriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NavigationButtons.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.IntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Profile.PatientProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Profile.ChooseYourDirectionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Profile.PatientInputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Profile.DoctorInputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Authentication.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Authentication.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Authentication.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TopDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.NavigationButtons.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
